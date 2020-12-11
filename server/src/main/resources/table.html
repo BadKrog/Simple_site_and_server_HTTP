@@ -1,0 +1,48 @@
+<html lang="en">
+	<link rel="stylesheet" type="text/css" href="table.css">
+    <script src="table.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<head>
+		<title>Задание</title>
+		<meta charset="UTF-8">
+
+		<!--link rel="stylesheet" type="text/css" href="menu.css"-->
+	</head>
+	<body>
+		<h1>ФИЛЬМЫ</h1>
+		<div class="pos">
+			<div class="info" >
+				<table rules="all" frame="border" id="table">
+					<tr>
+						<th>id</th><th>Название</th><th>Рейтинг</th><th>Длительность</th><th></th>
+					</tr>
+					<tr>
+						<td>1</td><td>Гарри Поттер и филосовский камень</td><td>9,8</td><td>158мин</td>
+						<td> <button class="redak">Ред.</button> <button class="delete">X</button>  </td>
+					</tr>
+				</table>
+			</div>
+            <button class="Depress" onclick="add()">Добавить</button>
+		</div>
+
+        <div class="icon">
+            <span class="menu">МЕНЮ</span><br/>
+            <a href="index.html"> <div class="round "></div> </a>
+            <a href="task.html"> <div class="round "></div> </a>
+            <div class="round act"></div>
+        </div>
+	
+		<!-- Popup -->
+		<div class="b-popup" id="popup1">
+			<div class="b-popup-content">
+				<p>Введите название фильма: <input type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"></input> </p>
+				<p>Введите рейтинг: <input type="number" pattern="\d+(\.\d{2})?"></input> </p>
+				<p>Введите длительность: <input type="number" pattern="^[ 0-9]+$"></input> </p>
+				<div>
+					<button id="add">Добавить</button>
+					<button id="exit">Отменить</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

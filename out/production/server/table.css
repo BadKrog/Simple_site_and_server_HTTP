@@ -1,0 +1,135 @@
+body{
+	background:url(fon.jpg) no-repeat;
+}
+h1{
+	position:absolute;
+	left: 40%;
+	font-size: 30pt;
+	font-weight:700;
+	
+	background:#E1E1E1;
+	padding-left:10px;
+	padding-right:10px;
+	
+	border: 2px solid black;
+}
+
+.info{
+	
+	background: #E1E1E1;
+	border-radius: 10px;
+	border: 10px solid black;
+	overflow: scroll;
+
+	height:90%;
+	width: 100%;
+}
+
+.pos{
+	position:absolute;
+	left: 10%;
+	top: 15%;
+	width: 80%;
+	height:60%;
+}
+
+table{
+	width:100%;
+	font-size: 15pt;
+}
+
+.Depress{
+	margin-top:20px;
+	
+	position: absolute;
+	
+	left:41%;
+	top:95%;
+	
+	border:5px inset #ededed;
+	background:linear-gradient(white, #cdcdcd);
+	
+	font-size:20pt;
+	
+	border-radius:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.Depress:hover{
+	border:3px solid red;
+}
+	
+.delete{
+	font-size:20px;
+	font-weight:600;
+	color:red;
+}
+
+.redak{
+	font-size:20px;
+	font-weight:600;
+}
+
+/* ----------- menu ----------------*/
+.icon{
+	position:absolute;
+	bottom:16px;
+	left:43%;
+	background: gray;
+
+	width:115px;
+	height:50px;
+
+	border:10px solid #E1E1E1;
+
+	cursor:default;
+
+	padding:3px;
+	border-radius:20px;
+}
+.round{
+	margin:5px;
+	width:20px;
+	height:20px;
+
+	border-radius:30px;
+	border:2px solid white;
+
+	display:inline-block;
+
+	background:black;
+
+	cursor:pointer;
+}
+.act{
+	background:red;
+	box-shadow:0 0 3px 4px white;
+
+	cursor:default;
+}
+
+.menu{
+	position:absolute;
+	font-weight:600;
+	left: 28%;
+}
+
+/* -------- Popup -----------*/
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:30%;
+    height: 40%;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}

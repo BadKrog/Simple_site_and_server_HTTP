@@ -1,0 +1,112 @@
+body{
+	background:url(fon.jpg) no-repeat;
+}
+
+h1{
+	position:absolute;
+	left: 22%;
+	font-size: 30pt;
+	font-weight:700;
+	
+	width: 52%;
+	height: 50px;
+	background:#E1E1E1;
+	padding-left:10px;
+	padding-right:10px;
+	
+	border: 2px solid black;
+}
+
+.info{
+	position:absolute;
+	left: 10%;
+	top: 15%;
+	
+	width: 80%;
+	height: 400px;
+	background: #E1E1E1;
+	
+	border-radius: 10px;
+	
+	border: 10px solid black;
+	
+	font-size: 20pt;
+	
+	padding: 20px;
+	
+}
+
+input{
+	font-size: 20pt;
+	margin-bottom:40px;
+}
+
+.Depress{
+	position: absolute;
+	
+	left:37%;
+	top:80%;
+	
+	border:5px inset #ededed;
+	background:linear-gradient(white, #cdcdcd);
+	
+	font-size:20pt;
+	
+	border-radius:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.Depress:hover{
+	border:3px solid red;
+}
+	
+
+.in{
+	width: 60%;
+}
+
+
+/*-------------------menu-------------*/
+.icon{
+	position:absolute;
+	bottom:16px;
+	left:43%;
+	background: gray;
+
+	width:115px;
+	height:50px;
+
+	border:10px solid #E1E1E1;
+
+	cursor:default;
+
+	padding:3px;
+	border-radius:20px;
+}
+.round{
+	margin:5px;
+	width:20px;
+	height:20px;
+
+	border-radius:30px;
+	border:2px solid white;
+
+	display:inline-block;
+
+	background:black;
+
+	cursor:pointer;
+}
+.act{
+	background:red;
+	box-shadow:0 0 3px 4px white;
+
+	cursor:default;
+}
+
+.menu{
+	position:absolute;
+	font-weight:600;
+	left: 28%;
+}
