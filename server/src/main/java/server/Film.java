@@ -14,7 +14,6 @@ public class Film {
     }
 
     // ---- Setors ----
-    public void setId(int id) { this.id = id;}
     public void setMinutes(int minutes) { this.minutes = minutes;}
     public void setName(String name) { this.name = name;}
     public void setRating(double rating) { this.rating = rating;}
@@ -27,6 +26,6 @@ public class Film {
 
     @Override
     public String toString() {
-        return id+" \""+name+"\" "+rating+" "+minutes;
+        return id+"+"+name+"+"+rating+"+"+minutes;
     }
 }

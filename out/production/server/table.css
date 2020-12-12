@@ -133,3 +133,14 @@ table{
     border-radius:5px;
     box-shadow: 0px 0px 10px #000;
 }
+
+/*----- Ввод данных в popup ----------*/
+input:valid + span:after{
+	color:green;
+	content:"\2611";
+}
+input:invalid + span:after{
+	color:red;
+	content:"\2612";
+}
+}

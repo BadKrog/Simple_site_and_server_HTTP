@@ -1,7 +1,8 @@
 <html lang="en">
 	<link rel="stylesheet" type="text/css" href="table.css">
-    <script src="table.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="table.js" defer></script>
+    
 	<head>
 		<title>Задание</title>
 		<meta charset="UTF-8">
@@ -15,10 +16,6 @@
 				<table rules="all" frame="border" id="table">
 					<tr>
 						<th>id</th><th>Название</th><th>Рейтинг</th><th>Длительность</th><th></th>
-					</tr>
-					<tr>
-						<td>1</td><td>Гарри Поттер и филосовский камень</td><td>9,8</td><td>158мин</td>
-						<td> <button class="redak">Ред.</button> <button class="delete">X</button>  </td>
 					</tr>
 				</table>
 			</div>
@@ -35,9 +32,11 @@
 		<!-- Popup -->
 		<div class="b-popup" id="popup1">
 			<div class="b-popup-content">
-				<p>Введите название фильма: <input type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"></input> </p>
-				<p>Введите рейтинг: <input type="number" pattern="\d+(\.\d{2})?"></input> </p>
-				<p>Введите длительность: <input type="number" pattern="^[ 0-9]+$"></input> </p>
+				<form>
+					<p>Введите название фильма: <input id="nameIn" type="text" required title="Название должно содержать только буквы, пробелы, \'-', ':', '.', ','."></input> <span></span></p>
+					<p>Введите рейтинг: <input id="ratingIn" type="number" required title="Рейтинг это число от 0 до 10"></input> <span></span></p>
+					<p>Введите длительность: <input id="minIn" type="text" required title="Может содержать только числа"></input> <span></span></p>
+				</form>
 				<div>
 					<button id="add">Добавить</button>
 					<button id="exit">Отменить</button>

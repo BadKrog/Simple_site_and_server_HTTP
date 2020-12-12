@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="237e7b95-4ffe-4b8b-b3d5-4bdf8c436a5e" name="Default Changelist" comment="" />
+    <list default="true" id="237e7b95-4ffe-4b8b-b3d5-4bdf8c436a5e" name="Default Changelist" comment="Working program">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/server/DataManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/DataManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/server/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/server/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/DataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/table.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +30,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lQkJUiqqpm3aaLTjnRKX81vlyZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\админ\IdeaProjects\practika3\server\src\main\resources" />
@@ -65,5 +87,20 @@
       <updated>1607536630573</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working program" />
   </component>
 </project>

@@ -65,7 +65,7 @@ public class ClientHandler implements Runnable {
             // Прописываем POST
             if (method.equals("POST")) {
                 System.out.println("Зашли в пост");
-                byte[] fileData = null;
+                byte[] fileData = "".getBytes();
 
                 if(fileRequested.equals("/task")) {
                     String line;
@@ -88,11 +88,49 @@ public class ClientHandler implements Runnable {
                     line = in.readLine();
                     System.out.println(line);
 
-                    /*
-                    * =========== Добавить удаление по id ============
-                    * */
+                    bd.Delete(line);
                 }
 
+                if(fileRequested.equals("/add")) {
+                    DataManager bd = DataManager.getInstance();
+
+                    String id;
+                    // Пропускаем ненужную информацию
+                    while ((id = in.readLine()) != null && !(id.isEmpty())) {
+                    }
+                    id = in.readLine();
+                    String name = in.readLine();
+                    String rating = in.readLine();
+                    String time = in.readLine();
+
+                    System.out.println(id+" "+name+" "+rating+" "+time);
+                    bd.Add(id, name, rating, time);
+                }
+
+                if(fileRequested.equals("/edit")) {
+                    DataManager bd = DataManager.getInstance();
+
+                    String id;
+                    // Пропускаем ненужную информацию
+                    while ((id = in.readLine()) != null && !(id.isEmpty())) {
+                    }
+                    id = in.readLine();
+                    String name = in.readLine();
+                    String rating = in.readLine();
+                    String time = in.readLine();
+
+                    System.out.println(id+" "+name+" "+rating+" "+time);
+
+                    bd.Editing(id, name, rating, time);
+                }
+
+                if(fileRequested.equals("/load")) {
+                    DataManager bd = DataManager.getInstance();
+
+                    fileData = bd.toString().getBytes();
+
+                    System.out.println("Зугрузили список:\n"+bd.toString());
+                }
                 // Шлем HTTP Headers
                 out.println("HTTP/1.1 200 OK");
                 out.println("Server: Java HTTP Server : 1.0");
