@@ -1,5 +1,7 @@
 package server;
 
+import server.db.FilmManager;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,40 +16,21 @@ public class DataManager {
         return instance;
     }
 
-    private List<Film> filmList = new ArrayList();
+    private DataManager(){};
 
-    private DataManager(){init();};
-
-    private int getIndexById(int id){
-        int index = -1;
-
-        for(int i=0; i<filmList.size(); i++){
-            if(filmList.get(i).getId()==id){
-                index = i;
-                break;
-            }
-        }
-        return index;
-    }
-
-    private void init(){
-        filmList.add(new Film(1, "Гарри Поттер", 8.6, 154));
-        filmList.add(new Film(2, "Шрек", 6.7, 95));
-        filmList.add(new Film(3, "Мстители", 8.4, 183));
-    }
 
     public void Add(String id, String name, String rating, String minutes){
         int myId = Integer.parseInt(id);
         double myRat = Double.parseDouble(rating);
         int myMin = Integer.parseInt(minutes);
 
-        filmList.add(new Film(myId, name, myRat, myMin));
+        Film film = new Film(name, myRat, myMin);
+        FilmManager.getInstance().add(film);
     }
 
     public void Delete(String aId){
         int id = Integer.parseInt(aId);
-        int index = getIndexById(id);
-        filmList.remove(index);
+        FilmManager.getInstance().delete(id);
     }
 
     public void Editing(String aId, String name, String rating, String minutes){
@@ -55,18 +38,20 @@ public class DataManager {
         double myRat = Double.parseDouble(rating);
         int myMin = Integer.parseInt(minutes);
 
-        int index = getIndexById(myId);
-
-        Film film = filmList.get(index);
-        film.setName(name);
-        film.setRating(myRat);
-        film.setMinutes(myMin);
+        Film film = new Film(myId, name, myRat, myMin);
+        FilmManager.getInstance().editing(film);
     }
 
-    public List<Film> getFilmList(){return filmList;}
+
+    //public List<Film> getFilmList(){return filmList;}
+
+    public List<Film> getFilmList(){
+        return FilmManager.getInstance().getFilmList();
+    }
 
     @Override
     public String toString() {
+        List<Film> filmList = getFilmList();
         String answer = filmList.size()+"\n";
         for(int i=0; i<filmList.size(); i++){
             answer += filmList.get(i).toString()+"\n";
