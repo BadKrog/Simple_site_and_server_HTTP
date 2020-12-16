@@ -24,14 +24,44 @@ public class FilmManager {
 
     // Возвращаем список фильмов из БД
     public List<Film> getFilmList() {
-        CriteriaBuilder builder = DBConfiguration.getInstance().getSession().getCriteriaBuilder();
+        myQuery = null;
+        isFinished = false;
+        Thread thread = new Thread(run);
+        thread.start();
+       try {
+           Thread.sleep(50);
+           while(!isFinished){
+               Thread.sleep(50);
+           }
+
+       }catch (InterruptedException e){
+           e.printStackTrace();
+       }
+        return myQuery;
+        /*CriteriaBuilder builder = DBConfiguration.getInstance().getSession().getCriteriaBuilder();
         CriteriaQuery<Film> cq = builder.createQuery(Film.class);
         Root<Film> rootEntry = cq.from(Film.class);
         CriteriaQuery<Film> all = cq.select(rootEntry);
 
         TypedQuery<Film> allQuery = DBConfiguration.getInstance().getSession().createQuery(all);
-        return allQuery.getResultList();
+        return allQuery.getResultList();*/
     }
+
+    List<Film> myQuery = null;
+    boolean isFinished = true;
+    Runnable run = new Runnable() {
+        @Override
+        public void run() {
+            CriteriaBuilder builder = DBConfiguration.getInstance().getSession().getCriteriaBuilder();
+            CriteriaQuery<Film> cq = builder.createQuery(Film.class);
+            Root<Film> rootEntry = cq.from(Film.class);
+            CriteriaQuery<Film> all = cq.select(rootEntry);
+
+            TypedQuery<Film> allQuery = DBConfiguration.getInstance().getSession().createQuery(all);
+            myQuery = allQuery.getResultList();
+            isFinished = true;
+        }
+    };
 
     // Удаляем значение по id
     public void delete(int id) {
@@ -55,6 +85,7 @@ public class FilmManager {
         }
 
     }
+
 
     // Добавляем значение
     public void add(Film film) {

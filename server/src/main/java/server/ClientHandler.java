@@ -213,8 +213,18 @@ public class ClientHandler implements Runnable {
         return (fileRequested.endsWith(".htm") || fileRequested.endsWith(".html"));
     }
 
+    private boolean isCss(String fileRequested){
+        return fileRequested.endsWith(".css");
+    }
+
     private String getContentType(String fileRequested) {
-        return isHtml(fileRequested) ? "text/html; charset=UTF-8" : "text/plain";
+        if(isHtml(fileRequested)){
+            return "text/html; charset=UTF-8";
+        }
+        else if (isCss(fileRequested)){
+            return "text/css;";
+        }
+        else return "text/plain";
     }
 
     private byte[] readFileData(String filePath) throws IOException {

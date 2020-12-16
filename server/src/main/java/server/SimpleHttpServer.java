@@ -18,7 +18,7 @@ public class SimpleHttpServer {
                 // Создаем отдельный поток для обработки запроса формирования ответа
                 Thread thread = new Thread(myServer);
                 thread.start();
-                Thread.sleep(50);
+                Thread.sleep(100);
             }
         }
         catch (IOException | InterruptedException e){

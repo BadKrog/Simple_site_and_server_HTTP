@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="237e7b95-4ffe-4b8b-b3d5-4bdf8c436a5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/server/db/DBConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/server/db/FilmManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/DataManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/Film.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/SimpleHttpServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/server/logics/Logics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/DataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/SimpleHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/SimpleHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/db/FilmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/db/FilmManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607748658659</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Practica 9. First working variant">
+      <created>1608081165904</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608081165904</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Practica 9. First working variant (all files)">
+      <created>1608081237327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608081237327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -143,6 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working program" />
+    <MESSAGE value="Practica 9. First working variant" />
+    <MESSAGE value="Practica 9. First working variant (all files)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica 9. First working variant (all files)" />
   </component>
 </project>
